@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Playfair_Display, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
+const playfairDisplay = Playfair_Display({
+    variable: "--font-playfair-display",
     subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
+const dmSerifDisplay = DM_Serif_Display({
+    variable: "--font-dm-serif-display",
     subsets: ["latin"],
+    weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -31,7 +32,7 @@ export default function RootLayout({
         <ClerkProvider>
             <html lang="en">
                 <body
-                    className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+                    className={`w-screen h-screen ${playfairDisplay.variable} ${dmSerifDisplay.variable} antialiased`}>
                     {children}
                 </body>
             </html>

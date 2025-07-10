@@ -1,5 +1,5 @@
 const HomePage = () => {
-    return <div>HomePage placeholder</div>;
+    return <div className="h-full">HomePage placeholder</div>;
 };
 
 export default HomePage;
