@@ -1,20 +1,26 @@
 @import "tailwindcss";
 
+@theme {
+    --color-becurlyBlack: #2c2c2c;
+    --color-becurlyArena: #f5f1ea;
+    --color-becurlyCobre: #cfae7b;
+}
+
 :root {
     --background: #171717;
-    --foreground: #ffffff;
+    --foreground: #d8d8d8;
 }
 
 @theme inline {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
-    --font-sans: var(--font-geist-sans);
-    --font-mono: var(--font-geist-mono);
+    --font-sans: var(--font-dm-serif-display);
+    --font-mono: var(--font-playfair-display);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #ffffff;
+        --background: #d8d8d8;
         --foreground: #0a0a0a;
     }
 }
@@ -22,7 +28,8 @@
 body {
     background: var(--background);
     color: var(--foreground);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "DM Serif Display", sans-serif, Arial;
+    overflow-x: hidden;
 }
 
 .cl-avatarBox {
