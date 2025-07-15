@@ -14,11 +14,12 @@ export default function DashboardLayout({
     return (
         <div className="w-full h-full flex bg-gray-100 ">
             {/* LEFT */}
-            <div className="w-[16%] md:w-[16%] lg:w-[16%] xl:w-[14%] p-2">
+            <div className="m-2 bg-becurlyBlack rounded-xl">
                 <Menu />
             </div>
+
             {/* RIGHT */}
-            <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] flex flex-col my-2 mr-2 border-1 border-gray-2 00 bg-white rounded-xl">
+            <div className="w-full overflow-hidden flex flex-col py-2">
                 {children}
             </div>
         </div>
