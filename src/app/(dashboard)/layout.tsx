@@ -12,14 +12,14 @@ export default function DashboardLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <div className="w-full h-full flex bg-gray-100 ">
+        <div className="w-full h-full flex bg-gray-200 ">
             {/* LEFT */}
-            <div className="m-2 bg-becurlyBlack rounded-xl">
+            <div className="ml-2 my-2 bg-becurlyBlack rounded-xl">
                 <Menu />
             </div>
 
             {/* RIGHT */}
-            <div className="w-full overflow-hidden flex flex-col py-2">
+            <div className="w-full overflow-hidden flex flex-col p-2">
                 {children}
             </div>
         </div>

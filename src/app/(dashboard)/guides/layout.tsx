@@ -19,7 +19,7 @@ export default function DashboardLayout({
             </div>
 
             {/* RIGHT */}
-            <div className="w-full flex flex-col mr-2 border-1 border-gray-300 bg-white rounded-xl drop-shadow-xl">
+            <div className="w-full flex flex-col border-1 border-gray-300 bg-white rounded-xl drop-shadow-xl">
                 {children}
             </div>
         </div>
